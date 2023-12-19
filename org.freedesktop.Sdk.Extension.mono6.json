@@ -60,6 +60,10 @@
                     "path": "install.sh"
                 },
                 {
+                    "type": "file",
+                    "path": "install-sdk.sh"
+                },
+                {
                     "type": "script",
                     "commands": [
                         "export PATH=$PATH:${FLATPAK_DEST}/bin",
