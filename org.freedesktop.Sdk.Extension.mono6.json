@@ -79,8 +79,7 @@
             "name": "appdata",
             "buildsystem": "simple",
             "build-commands": [
-                "mkdir -p ${FLATPAK_DEST}/share/appdata",
-                "cp ${FLATPAK_ID}.appdata.xml ${FLATPAK_DEST}/share/appdata",
+                "install -D ${FLATPAK_ID}.appdata.xml ${FLATPAK_DEST}/share/appdata/${FLATPAK_ID}.appdata.xml",
                 "appstream-compose  --basename=${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak ${FLATPAK_ID}"
             ],
             "sources": [
